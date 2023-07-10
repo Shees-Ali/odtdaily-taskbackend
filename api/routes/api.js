@@ -17,6 +17,8 @@ router.get("/", (req, res, next) => {
   });
 });
 
-router.post("/add", validateAddTask, addTask);
+router.post("/addTask", validateAddTask, addTask);
+
+router.get("/getTasks", getAllTask);
 
 module.exports = router;
